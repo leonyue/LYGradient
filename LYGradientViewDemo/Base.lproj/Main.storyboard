@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ihg-SC-IuF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyF-4c-udL" customClass="LYRadialGradientView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gII-AA-Xs7" customClass="LYLinearGradientView">
+                                        <rect key="frame" x="0.0" y="215.5" width="375" height="216"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-Yw-9Kd" customClass="LYSweepGradientView">
+                                        <rect key="frame" x="0.0" y="431.5" width="375" height="215.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CyF-4c-udL" firstAttribute="height" secondItem="gII-AA-Xs7" secondAttribute="height" id="7Ez-II-Buc"/>
+                                    <constraint firstAttribute="trailing" secondItem="CyF-4c-udL" secondAttribute="trailing" id="7jD-Yk-SS6"/>
+                                    <constraint firstItem="CyF-4c-udL" firstAttribute="leading" secondItem="ihg-SC-IuF" secondAttribute="leading" id="I4w-cO-xeH"/>
+                                    <constraint firstItem="Zht-Yw-9Kd" firstAttribute="leading" secondItem="ihg-SC-IuF" secondAttribute="leading" id="IN2-WK-yPc"/>
+                                    <constraint firstAttribute="trailing" secondItem="gII-AA-Xs7" secondAttribute="trailing" id="PfF-ed-1W1"/>
+                                    <constraint firstItem="CyF-4c-udL" firstAttribute="height" secondItem="Zht-Yw-9Kd" secondAttribute="height" id="Ux8-Af-eRT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zht-Yw-9Kd" secondAttribute="trailing" id="ocb-A2-XeB"/>
+                                    <constraint firstItem="gII-AA-Xs7" firstAttribute="leading" secondItem="ihg-SC-IuF" secondAttribute="leading" id="zY2-cm-aPJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ihg-SC-IuF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="emQ-PD-TOS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ihg-SC-IuF" secondAttribute="bottom" id="iFJ-m8-Bb5"/>
+                            <constraint firstAttribute="trailing" secondItem="ihg-SC-IuF" secondAttribute="trailing" id="l0j-m3-Mgi"/>
+                            <constraint firstItem="ihg-SC-IuF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rw1-o2-7Ws"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
