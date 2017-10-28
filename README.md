@@ -1,1 +1,3 @@
 # LYGradient
+
+![](gradient.png)
